@@ -1,1 +1,186 @@
-"Hello world"
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <!-- Link Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Your custom CSS -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+            padding: 20px;
+            /* Add padding to the whole body */
+        }
+
+        .section-header {
+            padding: 40px 0;
+            background-color: #343a40;
+            color: white;
+            text-align: center;
+            margin: 20px 0;
+            /* Add margin to separate sections */
+        }
+
+        .introduction-section {
+            padding: 60px 0;
+            background-color: white;
+            margin: 20px 0;
+        }
+
+        .introduction-content {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            justify-content: space-between;
+        }
+
+        .introduction-image {
+            flex: 1;
+            max-width: 100%;
+        }
+
+        .introduction-description {
+            flex: 3;
+            padding: 20px;
+            font-size: 18px;
+        }
+
+        .section-content {
+            padding: 40px 0;
+            margin: 20px 0;
+        }
+
+        .year-container {
+            margin-bottom: 20px;
+        }
+
+        .year-title {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .year-description {
+            font-size: 16px;
+        }
+
+        .blog-card {
+            border: none;
+            background-color: white;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+            margin-bottom: 20px;
+            padding: 20px;
+        }
+
+        .blog-card:hover {
+            transform: translateY(-5px);
+        }
+    </style>
+</head>
+
+<body>
+    <section class="section-header">
+        <div class="container">
+            <h2>Sagar Sarkale</h2>
+        </div>
+    </section>
+
+    <!-- Introduction Section -->
+    <section class="introduction-section">
+        <div class="container">
+            <div class="introduction-content">
+                <div class="introduction-image">
+                    <img src="images/profile-image.jpeg" alt="Profile Image" width="150" height="auto">
+                </div>
+                <div class="introduction-description">
+
+                    <p>This is where I showcase my journey, projects, and thoughts.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Journey Section -->
+    <section class="section-header">
+        <div class="container">
+            <h2>My Journey</h2>
+        </div>
+    </section>
+    <section class="section-content">
+        <div class="container">
+            <div class="year-container">
+                <h3 class="year-title">Year 1</h3>
+                <p class="year-description">
+                    First job: Description...<br>
+                    Key projects: List projects...
+                </p>
+            </div>
+            <div class="year-container">
+                <h3 class="year-title">Year 2</h3>
+                <p class="year-description">
+                    Key projects: List projects...<br>
+                    Career progression: Details...
+                </p>
+            </div>
+            <div class="year-container">
+                <h3 class="year-title">Year 3</h3>
+                <p class="year-description">
+                    Career progression: Details...<br>
+                    Current role: Description...
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blogs Section -->
+    <section class="section-content">
+        <div class="container">
+            <h2>Blogs</h2>
+            <br>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card blog-card">
+                        <div class="card-body">
+                            <h5 class="card-title">RNNs a walkthrough</h5>
+                            <p class="card-text">Brief description about Recurrent Neural Networks and how they work.
+                            </p>
+                            <a href="blogs/rnn/rnns-a-walkthrough.html" class="btn btn-outline-primary btn-sm">Read
+                                More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card blog-card">
+                        <div class="card-body">
+                            <h5 class="card-title">Blog Post Title 2</h5>
+                            <p class="card-text">Brief description of another blog post.</p>
+                            <a href="#" class="btn btn-outline-primary btn-sm">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card blog-card">
+                        <div class="card-body">
+                            <h5 class="card-title">Blog Post Title 3</h5>
+                            <p class="card-text">Brief description of a third blog post.</p>
+                            <a href="#" class="btn btn-outline-primary btn-sm">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Link Bootstrap JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
