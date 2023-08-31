@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    /* Add padding to the whole body */
+}
+
+.navbar {
+    background-color: #f8f9fa;
+}
+
+.navbar-title {
+    font-family: 'Cedarville Cursive';
+    font-size: 32px;
+}
+
+.section-header {
+    padding: 40px 0;
+    /* background-color: #343a40; */
+    /* color: white; */
+    text-align: center;
+    margin: 20px 0;
+    /* Add margin to separate sections */
+}
+
+.introduction-section {
+    padding: 60px 0;
+    background-color: white;
+    margin: 20px 0;
+}
+
+.introduction-content {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.introduction-image {
+    flex: 1;
+    max-width: 100%;
+}
+
+.introduction-description {
+    flex: 3;
+    padding: 20px;
+    font-size: 18px;
+}
+
+.section-content {
+    padding: 40px 0;
+}
+
+
+.blog-card {
+    border: none;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.blog-card:hover {
+    transform: translateY(-5px);
+}
