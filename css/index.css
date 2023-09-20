@@ -64,3 +64,10 @@ body {
 .blog-card:hover {
     transform: translateY(-5px);
 }
+
+#no-color-link {
+    text-decoration: none;
+    /* Removes underline */
+    color: inherit;
+    /* Inherits the text color from the parent element */
+}
