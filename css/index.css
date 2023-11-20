@@ -147,3 +147,7 @@ body {
   object-fit: cover; /* Maintain aspect ratio and cover the entire area */
   width: 100%; /* Scale width to fit the container */
 }
+
+.site-footer {
+  margin: 50px;
+}
