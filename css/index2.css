@@ -1,3 +1,77 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+  /* Add padding to the whole body */
+}
+
+.navbar {
+  background-color: #f8f9fa;
+}
+
+.cursive {
+  font-family: 'Cedarville Cursive';
+  font-size: 32px;
+}
+
+.section-header {
+  /* padding: 40px 0 5px; */
+  /* background-color: #343a40; */
+  /* color: white; */
+  text-align: center;
+  margin: 20px;
+  /* Add margin to separate sections */
+}
+
+.introduction-section {
+  padding: 60px 0;
+  background-color: white;
+  margin: 20px 0;
+}
+
+.introduction-content {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.introduction-image {
+  flex: 1;
+  max-width: 100%;
+}
+
+.introduction-description {
+  flex: 3;
+  padding: 20px;
+  font-size: 18px;
+}
+
+.section-content {
+  padding: 20px 0 20px;
+}
+
+
+.blog-card {
+  border: none;
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+.blog-card:hover {
+  transform: translateY(-5px);
+}
+
+#no-color-link {
+  text-decoration: none;
+  /* Removes underline */
+  color: inherit;
+  /* Inherits the text color from the parent element */
+}
+
 /* Custom styles */
 .card {
   margin-bottom: 20px;
@@ -6,12 +80,12 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 .experience-card {
-  padding-left: 20px;
-  padding-top: 20px;
+  padding: "20px 10px 20px 10px";
 }
 
 .card-body {
-  padding: 20px;
+  padding: 12px;
+
 }
 
 .card-title {
@@ -48,78 +122,28 @@
 
 }
 
-/* old styles */
 
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f8f9fa;
-  color: #333;
-  /* Add padding to the whole body */
+
+/* button blogs */
+.btn {
+  background-color: transparent; /* Remove background color */
+  color: #007bff; /* Set text color */
+  border: 1px solid #007bff; /* Add a border */
+  padding: 5px 10px; /* Adjust padding as needed */
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Adjust the shadow values as needed */
 }
 
-.navbar {
-  background-color: #f8f9fa;
+.btn:hover {
+  background-color: #f0f0f0; /* Change background color on hover */
+  color: #0056b3; /* Change text color on hover */
+  border-color: #0056b3; /* Change border color on hover */
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
-.cursive {
-  font-family: 'Cedarville Cursive';
-  font-size: 32px;
-}
+/* blog image */
 
-.section-header {
-  padding: 40px 0;
-  /* background-color: #343a40; */
-  /* color: white; */
-  text-align: center;
-  margin: 20px 0;
-  /* Add margin to separate sections */
-}
-
-.introduction-section {
-  padding: 60px 0;
-  background-color: white;
-  margin: 20px 0;
-}
-
-.introduction-content {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: space-between;
-}
-
-.introduction-image {
-  flex: 1;
-  max-width: 100%;
-}
-
-.introduction-description {
-  flex: 3;
-  padding: 20px;
-  font-size: 18px;
-}
-
-.section-content {
-  padding: 40px 0;
-}
-
-
-.blog-card {
-  border: none;
-  background-color: white;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease-in-out;
-  margin-bottom: 20px;
-  padding: 20px;
-}
-
-.blog-card:hover {
-  transform: translateY(-5px);
-}
-
-#no-color-link {
-  text-decoration: none;
-  /* Removes underline */
-  color: inherit;
-  /* Inherits the text color from the parent element */
+.card-img-top {
+  height: 150px; /* Set the fixed height for the images */
+  object-fit: cover; /* Maintain aspect ratio and cover the entire area */
+  width: 100%; /* Scale width to fit the container */
 }
